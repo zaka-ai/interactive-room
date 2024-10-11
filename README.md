@@ -22,11 +22,12 @@ clone the repository
 ```
 %cd zaka
 ```
-
+```
 !git clone https://github.com/neuralchen/SimSwap 
-
+```
+```
 !mkdir -p SimSwap/checkpoints
-
+```
 !mkdir -p SimSwap/insightface_func/models
 
 !mkdir -p SimSwap/parsing_model/checkpoint
