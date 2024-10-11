@@ -1,18 +1,18 @@
 # Interactive-room
-The aim of this project is to have a fully emerged experience where the user can see themselves in  any movie scene, and not only the face, but also the scenes lines will be spelled by the user's voice! It has a google colab to try it, we attached some movie scenes for each gender.
+The aim of this project is to provide a fully immersive experience where users can see themselves in any movie scene. Not only will their face be inserted into the scene, but the dialogue will also be spoken in their own voice! We have a Google Colab for users to try it out, and we've included several movie scenes for each gender.
 
 
 # Model
 This project consists of three models:
 
-1- The first one is the gender model where it will detect the user's gender and proposes movie scenes based on it.
+1- Gender Model: This model detects the user's gender and suggests appropriate movie scenes based on the result.
 
-2- The second model is the SimSwao model where it will detect the face, swap it and align it on the scene.
+2- SimSwap Model: This model detects the user's face, swaps it with the actor's face, and aligns it within the scene.
 
-3- The voice model will have to clone the user's voice so the words of the actor will be said by the user's voice.
+3- Voice Model: This model clones the user's voice, allowing the actor's lines to be spoken in the user's voice.
 
 # Process
-We firstly trained the gender model using Yolov10s pre-trained model, then we tested the SimSwap model but we considered training it for better result and finally we used Coquii TTS model for voice cloning.
+We first trained the gender model using the pre-trained YOLOv10s model. Next, we trained the SimSwap model, and finally, we used the Coqui TTS model for voice cloning. Finally, we built an interface to host these models.
 
 # Guidance
 To begin, we have to set up the SimSwap environement. Firslty, you have to run these following commands to get the necessary files.
@@ -63,8 +63,8 @@ clone the repository
 ```
 
 ## Note
-We did not provide any model, so you have to use your own trained SimSwap and Gender model and proceed with the rest:
+We did not provide any pre-trained models, so you will need to use your own trained SimSwap and Gender models to proceed.
 
-In 'people' folder you need to move your SimSwap trained model to it and rename it as (latest_net_G.pth) for better handling in order to use it.
+In the 'people' folder, move your trained SimSwap model to this directory and rename it as latest_net_G.pth for easier handling and use.
 
-Go to "SimSwap/util/reverse2original.py" and convert all 'np.float' to float.
+Navigate to SimSwap/util/reverse2original.py and convert all instances of np.float to float for compatibility.
