@@ -19,8 +19,8 @@ To begin, we have to set up the SimSwap environement, since we already have our 
 
 clone the repository
 
-%cd zaka
-
+'''%cd zaka
+'''
 !git clone https://github.com/neuralchen/SimSwap 
 
 !mkdir -p SimSwap/checkpoints
