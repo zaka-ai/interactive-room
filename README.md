@@ -61,7 +61,7 @@ clone the repository
 ```
 !gdown --id 1-NwyIz9prIuRD1HSnLHxlxCSLP_1y5EK
 ```
-```
+```python
 !mv ./latest_net_G.pth ./SimSwap/checkpoints/people #this is our 390K steps model, it is named as 'latest' so we do not need to specify "which epoch" in
 the command of SimSwap
 ```
