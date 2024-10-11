@@ -35,15 +35,19 @@ clone the repository
 
 
 !gdown --id 1eg5abGyFk-q5PbYiba4LbihwX4rNyEh-
+
 !mv ./antelope.zip SimSwap/insightface_func/models
 
 !unzip ./SimSwap/insightface_func/models/antelope.zip -d ./SimSwap/insightface_func/models/
 
 !mkdir -p SimSwap/arcface_model
+
 !gdown --id 1TLNdIufzwesDbyr_nVTR7Zrx9oRHLM_N -O SimSwap/arcface_model/arcface_checkpoint.tar
+
 !mkdir ./SimSwap/checkpoints/people
 
 !gdown --id 1-NwyIz9prIuRD1HSnLHxlxCSLP_1y5EK
+
 !mv ./latest_net_G.pth ./SimSwap/checkpoints/people #this is our 390K steps model, it is named as 'latest' so we do not need to specify "which epoch" in
 the command of SimSwap
 
