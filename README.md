@@ -1,8 +1,6 @@
 # Interactive-room
 The aim of this project is to have a fully emerged experience where the user can see themselves in  any movie scene, and not only the face, but also the scenes lines will be spelled by the user's voice! It has a google colab to try it, we attached some movie scenes for each gender.
 
-(It is only for use, it cannot be trained)
-
 
 # Model
 This project consists of three models:
