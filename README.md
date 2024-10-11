@@ -18,14 +18,21 @@ We firstly trained the gender model using Yolov10s pre-trained model, then we te
 To begin, we have to set up the SimSwap environement, since we already have our gender model. To use it, you have to run these following commands to get the necessary files
 
 clone the repository
+
 %cd zaka
+
 !git clone https://github.com/neuralchen/SimSwap 
+
 !mkdir -p SimSwap/checkpoints
+
 !mkdir -p SimSwap/insightface_func/models
+
 !mkdir -p SimSwap/parsing_model/checkpoint
 
 !gdown --id 1PsvCnILPVnfXSVplvbtfmYC4a6Wy2mZx
+
 !mv ./79999_iter.pth SimSwap/parsing_model/checkpoint
+
 
 !gdown --id 1eg5abGyFk-q5PbYiba4LbihwX4rNyEh-
 !mv ./antelope.zip SimSwap/insightface_func/models
