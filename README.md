@@ -15,7 +15,7 @@ This project consists of three models:
 We firstly trained the gender model using Yolov10s pre-trained model, then we tested the SimSwap model but we considered training it for better result and finally we used Coquii TTS model for voice cloning.
 
 # Guidance
-To begin, we have to set up the SimSwap environement, since we already have our gender model. To use it, you have to run these following commands to get the necessary files
+To begin, we have to set up the SimSwap environement. Firslty, you have to run these following commands to get the necessary files.
 
 clone the repository
 
@@ -61,11 +61,10 @@ clone the repository
 ```
 !mkdir ./SimSwap/checkpoints/people
 ```
-```
-!gdown --id 1-NwyIz9prIuRD1HSnLHxlxCSLP_1y5EK
-```
-```python
-!mv ./latest_net_G.pth ./SimSwap/checkpoints/people #this is our 390K steps model, it is named as 'latest' so we do not need to specify "which epoch" in
-the command of SimSwap
-```
+
+## Note
+We did not provide any model, so you have to use your own trained SimSwap and Gender model and proceed with the rest:
+
+In 'people' folder you need to move your SimSwap trained model to it and rename it as (latest_net_G.pth) for better handling in order to use it.
+
 Go to "SimSwap/util/reverse2original.py" and convert all 'np.float' to float.
